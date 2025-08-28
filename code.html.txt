@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MonsterVerse - Muhammad Umair's Monster Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for monster theme */
+        .monster-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .monster-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .monster-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+        }
+        .glow-effect {
+            box-shadow: 0 0 15px rgba(102, 126, 234, 0.5);
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        .floating {
+            animation: float 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white min-h-screen">
+    <!-- Navigation -->
+    <nav class="monster-gradient py-4 px-6 fixed w-full top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold text-yellow-400">
+                🐲 MonsterVerse
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#home" class="hover:text-yellow-400 transition-colors">Home</a>
+                <a href="#about" class="hover:text-yellow-400 transition-colors">About</a>
+                <a href="#gallery" class="hover:text-yellow-400 transition-colors">Gallery</a>
+                <a href="#types" class="hover:text-yellow-400 transition-colors">Types</a>
+                <a href="#contact" class="hover:text-yellow-400 transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-24 pb-20 monster-gradient">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 text-yellow-400">
+                WELCOME TO MONSTERVERSE
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+                Explore the fascinating world of mythical creatures and monsters from legends around the globe
+            </p>
+            <div class="floating mb-8">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8b9a0b98-0877-4836-b1a2-4bb62946866e.png" alt="Majestic dragon soaring through stormy skies with lightning effects and dramatic atmosphere" class="mx-auto rounded-lg glow-effect w-full max-w-md">
+            </div>
+            <button class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 px-8 rounded-full text-lg transition-colors">
+                Explore Monsters
+            </button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-yellow-400">ABOUT MONSTERVERSE</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3f93e93f-d7f0-4947-a768-768fb4b73ad4.png" alt="Ancient scroll with monster illustrations and mystical symbols glowing with magical energy" class="rounded-lg w-full">
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Created by Muhammad Umair</h3>
+                    <p class="text-lg mb-6">
+                        MonsterVerse is a comprehensive digital encyclopedia dedicated to the study and appreciation of mythical creatures from various cultures and folklore traditions around the world.
+                    </p>
+                    <p class="text-lg mb-6">
+                        Our mission is to preserve these incredible stories and bring the magic of mythology to life through interactive exhibits and educational content.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="text-center p-4 bg-gray-700 rounded-lg">
+                            <div class="text-2xl font-bold text-yellow-400">100+</div>
+                            <div>Monster Species</div>
+                        </div>
+                        <div class="text-center p-4 bg-gray-700 rounded-lg">
+                            <div class="text-2xl font-bold text-yellow-400">50+</div>
+                            <div>Cultural Origins</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-yellow-400">MONSTER GALLERY</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="monster-card bg-gray-800 rounded-lg overflow-hidden">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/11520e48-85d7-499e-9ee7-97c798ad5320.png" alt="Fierce dragon with glowing red eyes and smoke emanating from nostrils in dark cavern" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Fire Dragon</h3>
+                        <p class="text-gray-300">Mythical reptilian creature capable of breathing fire and flight.</p>
+                    </div>
+                </div>
+                <div class="monster-card bg-gray-800 rounded-lg overflow-hidden">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f0b0f833-d54b-40bc-a308-7b5c611ada6a.png" alt="Mysterious sea serpent emerging from ocean waves with moonlit background" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Sea Serpent</h3>
+                        <p class="text-gray-300">Gigantic sea monster found in maritime folklore worldwide.</p>
+                    </div>
+                </div>
+                <div class="monster-card bg-gray-800 rounded-lg overflow-hidden">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f9d7f8aa-c246-429e-99ff-ff9a9bbec142.png" alt="Werewolf transformation under full moon with dramatic lighting and forest setting" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Werewolf</h3>
+                        <p class="text-gray-300">Human with ability to shapeshift into wolf-like creature.</p>
+                    </div>
+                </div>
+                <div class="monster-card bg-gray-800 rounded-lg overflow-hidden">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/29eef0b4-095c-42ab-ae76-b43da89176c3.png" alt="Vampire in elegant attire with glowing eyes and misty castle background" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Vampire</h3>
+                        <p class="text-gray-300">Mythical creature that subsists by feeding on vital essence.</p>
+                    </div>
+                </div>
+                <div class="monster-card bg-gray-800 rounded-lg overflow-hidden">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/86f6434a-b5d2-4ec8-825f-bd37438eaaf9.png" alt="Cyclops giant with single eye and mountainous terrain environment" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Cyclops</h3>
+                        <p class="text-gray-300">One-eyed giant from Greek and Roman mythology.</p>
+                    </div>
+                </div>
+                <div class="monster-card bg-gray-800 rounded-lg overflow-hidden">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/88be72a7-c16d-4264-a2c1-5cb793c95bb1.png" alt="Ghostly apparition with ethereal glow in abandoned mansion setting" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Ghost</h3>
+                        <p class="text-gray-300">Spirit of a dead person that can appear to the living.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Monster Types Section -->
+    <section id="types" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-yellow-400">MONSTER CATEGORIES</h2>
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="text-center p-6 bg-gray-700 rounded-lg monster-card">
+                    <div class="text-3xl mb-4">🐉</div>
+                    <h3 class="text-xl font-bold mb-2">Dragons</h3>
+                    <p class="text-sm">Fire-breathing reptilian creatures</p>
+                </div>
+                <div class="text-center p-6 bg-gray-700 rounded-lg monster-card">
+                    <div class="text-3xl mb-4">🌊</div>
+                    <h3 class="text-xl font-bold mb-2">Sea Monsters</h3>
+                    <p class="text-sm">Creatures of the deep oceans</p>
+                </div>
+                <div class="text-center p-6 bg-gray-700 rounded-lg monster-card">
+                    <div class="text-3xl mb-4">👻</div>
+                    <h3 class="text-xl font-bold mb-2">Undead</h3>
+                    <p class="text-sm">Beings returned from death</p>
+                </div>
+                <div class="text-center p-6 bg-gray-700 rounded-lg monster-card">
+                    <div class="text-3xl mb-4">🧌</div>
+                    <h3 class="text-xl font-bold mb-2">Giants</h3>
+                    <p class="text-sm">Humanoid beings of great size</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Quiz Section -->
+    <section class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-yellow-400">MONSTER QUIZ</h2>
+            <div class="max-w-2xl mx-auto bg-gray-800 rounded-lg p-8">
+                <div id="quiz-container">
+                    <h3 class="text-2xl font-bold mb-6">Test Your Monster Knowledge!</h3>
+                    <p class="mb-6">Which mythical creature is known for turning people to stone with its gaze?</p>
+                    <div class="space-y-3">
+                        <button class="quiz-option w-full text-left p-4 bg-gray-700 rounded-lg hover:bg-gray-600 transition-colors">
+                            A) Medusa
+                        </button>
+                        <button class="quiz-option w-full text-left p-4 bg-gray-700 rounded-lg hover:bg-gray-600 transition-colors">
+                            B) Minotaur
+                        </button>
+                        <button class="quiz-option w-full text-left p-4 bg-gray-700 rounded-lg hover:bg-gray-600 transition-colors">
+                            C) Cerberus
+                        </button>
+                        <button class="quiz-option w-full text-left p-4 bg-gray-700 rounded-lg hover:bg-gray-600 transition-colors">
+                            D) Hydra
+                        </button>
+                    </div>
+                    <div id="quiz-result" class="mt-6 p-4 rounded-lg hidden"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-yellow-400">CONTACT</h2>
+            <div class="max-w-md mx-auto">
+                <div class="bg-gray-700 rounded-lg p-8">
+                    <h3 class="text-2xl font-bold mb-6 text-center">Get in Touch</h3>
+                    <form>
+                        <div class="mb-4">
+                            <label class="block text-sm font-bold mb-2">Name</label>
+                            <input type="text" class="w-full p-3 bg-gray-600 rounded-lg text-white" placeholder="Your Name">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-sm font-bold mb-2">Email</label>
+                            <input type="email" class="w-full p-3 bg-gray-600 rounded-lg text-white" placeholder="your@email.com">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-sm font-bold mb-2">Message</label>
+                            <textarea class="w-full p-3 bg-gray-600 rounded-lg text-white h-32" placeholder="Your message about monsters..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 px-6 rounded-lg transition-colors">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                <div class="text-center mt-8">
+                    <p class="text-lg">Created by <span class="text-yellow-400 font-bold">Muhammad Umair</span></p>
+                    <p class="text-sm text-gray-400">Monster Encyclopedia Project</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="monster-gradient py-8 text-center">
+        <div class="container mx-auto px-6">
+            <p>© 2024 MonsterVerse. All rights reserved. Project by Muhammad Umair</p>
+            <p class="text-sm mt-2">Exploring the world of mythical creatures and legends</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Quiz functionality
+        document.querySelectorAll('.quiz-option').forEach(button => {
+            button.addEventListener('click', function() {
+                const resultDiv = document.getElementById('quiz-result');
+                const answer = this.textContent.trim();
+                
+                if (answer === 'A) Medusa') {
+                    resultDiv.innerHTML = '<div class="bg-green-600 text-white p-3 rounded">Correct! Medusa is the Gorgon who could turn people to stone with her gaze.</div>';
+                } else {
+                    resultDiv.innerHTML = '<div class="bg-red-600 text-white p-3 rounded">Incorrect. The correct answer is Medusa, the Gorgon from Greek mythology.</div>';
+                }
+                
+                resultDiv.classList.remove('hidden');
+                
+                // Reset after 3 seconds
+                setTimeout(() => {
+                    resultDiv.classList.add('hidden');
+                }, 3000);
+            });
+        });
+
+        // Monster card hover effect enhancement
+        const monsterCards = document.querySelectorAll('.monster-card');
+        monsterCards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.classList.add('glow-effect');
+            });
+            card.addEventListener('mouseleave', () => {
+                card.classList.remove('glow-effect');
+            });
+        });
+    </script>
+</body>
+</html>
+
